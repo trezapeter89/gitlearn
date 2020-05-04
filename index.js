@@ -6,4 +6,6 @@ app.get('/', (req, res) => res.send('Hello and welcome to home page!'));
 
 app.get('/status', (req, res) => res.send('If you see this! things are good.'));
 
+app.get('/json', (req, res) => res.send('{name:"shashank"}'));
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
